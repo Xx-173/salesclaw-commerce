@@ -1,4 +1,4 @@
-name: Publish SalesClaw agent image
+name: Publish SalesClaw Commerce agent image
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
 
 env:
   # GHCR image references must be lowercase; GitHub displays the owner as Xx-173.
-  IMAGE_NAME: ghcr.io/xx-173/salesclaw-agent
+  IMAGE_NAME: ghcr.io/xx-173/salesclaw-commerce-agent
 
 jobs:
   build-and-smoke:
@@ -60,13 +60,13 @@ jobs:
           build-args: |
             TOOL_REFRESH=${{ github.sha }}
           outputs: type=image,name=${{ env.IMAGE_NAME }},push-by-digest=true,name-canonical=true,push=true
-          cache-from: type=gha,scope=salesclaw-agent-${{ matrix.arch }}
-          cache-to: type=gha,mode=max,scope=salesclaw-agent-${{ matrix.arch }}
+          cache-from: type=gha,scope=salesclaw-commerce-agent-${{ matrix.arch }}
+          cache-to: type=gha,mode=max,scope=salesclaw-commerce-agent-${{ matrix.arch }}
           sbom: true
           provenance: mode=max
           labels: |
-            org.opencontainers.image.title=SalesClaw Agent
-            org.opencontainers.image.description=Isolated multi-platform agent runtime for SalesClaw
+            org.opencontainers.image.title=SalesClaw Commerce Agent
+            org.opencontainers.image.description=Isolated multi-platform agent runtime for SalesClaw Commerce
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
 

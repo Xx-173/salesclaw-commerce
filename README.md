@@ -1,7 +1,7 @@
 # SalesClaw Commerce
 
 <p align="center">
-  <img src="web/public/icons/logo-1024.png" alt="SalesClaw logo" width="112" />
+  <img src="web/public/icons/logo-1024.png" alt="SalesClaw Commerce logo" width="112" />
 </p>
 
 <p align="center">
@@ -67,7 +67,7 @@ docs/                   API、安全、权限与运行说明
 - 生产环境使用 HTTPS / WSS，并把密钥放在受管密钥存储或部署环境变量中。
 - 将消息渠道、客户数据和外发能力绑定到最小权限的 Workspace 与角色。
 - 对销售自动化场景，为频控、停用、人工接管、同意状态和审计留出明确控制点。
-- 默认容器镜像为 `ghcr.io/xx-173/salesclaw-agent:latest`；首次使用前请发布或显式指定你自己的 `SALESCLAW_CONTAINER_IMAGE` / `CONTAINER_IMAGE`。
+- 默认容器镜像为 `ghcr.io/xx-173/salesclaw-commerce-agent:latest`；首次使用前请发布或显式指定你自己的 `SALESCLAW_CONTAINER_IMAGE` / `CONTAINER_IMAGE`。
 
 ## 许可证
 

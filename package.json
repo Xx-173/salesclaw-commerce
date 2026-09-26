@@ -1,7 +1,7 @@
 {
-  "name": "salesclaw",
+  "name": "salesclaw-commerce",
   "version": "1.0.0",
-  "description": "SalesClaw: a self-hosted, governed AI agent platform for teams and business applications.",
+  "description": "SalesClaw Commerce: a domestic multi-channel retail digital employee platform.",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -79,11 +79,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xx-173/salesclaw.git"
+    "url": "git+https://github.com/Xx-173/salesclaw-commerce.git"
   },
-  "homepage": "https://github.com/Xx-173/salesclaw#readme",
+  "homepage": "https://github.com/Xx-173/salesclaw-commerce#readme",
   "bugs": {
-    "url": "https://github.com/Xx-173/salesclaw/issues"
+    "url": "https://github.com/Xx-173/salesclaw-commerce/issues"
   },
   "author": "Xx-173",
   "keywords": [
